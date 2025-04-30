@@ -13,6 +13,7 @@ int main()
     // Sorting the array using bubble sort
     for (i = n-1; i >=1; i--)
     {
+        int swapdone = 0;
         for (j = 0; j <=i - 1; j++)
         {
             if (arr[j] > arr[j + 1])
@@ -21,8 +22,13 @@ int main()
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                swapdone = 1;
             }
         }
+        if (swapdone == 0){
+            break; // No swaps means the array is sorted
+        }
+        printf("runs\n");
     }
 
     printf("The sorted array is: ");
