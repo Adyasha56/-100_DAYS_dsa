@@ -20,3 +20,4 @@ int main(){
     printf("The missing element is: %d\n", miss);
     return 0;
 }
+
