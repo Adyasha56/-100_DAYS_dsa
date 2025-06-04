@@ -26,3 +26,5 @@ int main()
     printf("The number that occurs once is: %d\n", xor);
     return 0;
 }
+// Time Complexity: O(n)
+// Space Complexity: O(1)
