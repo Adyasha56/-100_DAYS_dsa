@@ -28,12 +28,12 @@ int main()
             //indices of those two ele 
 
             printf("Yes\n");
-            printf("Indices: %d and %d\n", i, hashmap[complement]);
+            printf("Indices: %d and %d\n", i, hashmap[complement] - 1);
             printf("Elements: %d and %d\n", arr[i], complement);
             return 0;
         }
         
-        hashmap[arr[i]]++;
+        hashmap[arr[i]] = i + 1; // Store index + 1 to differentiate from zero
     }
     printf("No\n");
     return 0;
