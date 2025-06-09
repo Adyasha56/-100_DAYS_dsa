@@ -1,4 +1,5 @@
 //leader in an array optimal solution
+//every element which is greater than all the elements to its right is called a leader in an array.
 
 #include <stdio.h>
 int main() {
